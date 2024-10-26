@@ -1,0 +1,89 @@
+.custom_table {
+  border-collapse: collapse;
+  margin-top: 60px;
+  padding: 0 20px;
+  height: 67vh;
+  overflow-y: scroll;
+}
+
+.table_row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 28px auto;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  position: relative;
+  transition: height 0.5s, background-color 0.5s;
+}
+
+.table_row:hover {
+  background-color: #ffffff; /* Set a background color for the hovered row */
+}
+
+.header_row {
+  background-color: #e5e7ea;
+  font-size: 20px;
+  color: #5a5a5a;
+  cursor: pointer;
+  flex-basis: 100%; /* Full width for header row */
+}
+
+.table_cell {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.sort_button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.sort_button:hover {
+  color: #ffffff66;
+}
+
+.additional_content {
+  flex-basis: 100%; /* Full width for additional content */
+  padding: 10px;
+  display: none;
+}
+
+.table_row:hover .additional_content {
+  display: flex; /* Show additional content when the row is hovered */
+}
+
+.additional_content img {
+  max-width: 100%;
+  max-height: 100px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.table_row.hovered {
+  height: 150px; /* Adjust the height as needed */
+}
+
+@media (max-width: 600px) {
+  .table_row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table_cell {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header_row {
+    display: none;
+  }
+}

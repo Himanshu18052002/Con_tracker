@@ -1,0 +1,226 @@
+/* TaskScreen.css */
+.top_heading_container_tasks {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  cursor: pointer;
+  margin-left: 4.5%;
+}
+
+.top_heading_container_tasks h2 {
+  cursor: pointer;
+}
+
+.active_heading {
+  color: black;
+  border-bottom: 5px solid #426099;
+}
+
+.table_tasks {
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: auto auto;
+}
+
+.header_tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* Align the header cells with their respective pointer */
+}
+
+.header_tasks h3 {
+  font-weight: 300;
+}
+.header_item_tasks {
+  margin-left: 6.5%;
+}
+.header_item1_tasks {
+  margin-left: 37%;
+}
+.header_item2_tasks {
+  margin-left: 3%;
+}
+.header_item3_tasks {
+  margin-right: 14%;
+}
+.cell_text_tasks {
+  font-weight: 100;
+}
+
+.body_tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.row_tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 1%;
+  transition: background-color 0.3s ease;
+  gap: 10px;
+}
+
+.row_tasks:hover {
+  background-color: #f0f0f0;
+}
+
+.cell_tasks {
+  flex: 1;
+  padding: 12px;
+  text-align: left;
+  word-break: break-word;
+}
+.cell_tasks p {
+  color: rgb(116, 116, 116);
+  font-size: 18px;
+}
+.cell_task_tasks {
+  flex: 3;
+}
+.cell_task_tasks p {
+  color: black;
+  font-size: 18px;
+}
+.cell_checkbox_tasks {
+  width: 80px;
+}
+
+.top_portion_tasks {
+  margin-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_heading_container_tasks {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  cursor: pointer;
+  margin-left: 4.5%;
+}
+
+.top_heading_container_tasks h2 {
+  cursor: pointer;
+}
+
+.active_heading {
+  color: black;
+  border-bottom: 5px solid #426099;
+}
+.task_adder_tasks button {
+  background-color: #5656bd;
+  color: white;
+  border-radius: 20px;
+  width: 121px;
+  height: 43px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.top_right_logos_container_tasks {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+.top_right_logos_tasks {
+  display: flex; /* Added flex display to center the content vertically */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Use 50% for a perfect circle */
+}
+
+.table_tasks {
+  width: 91%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: auto auto;
+}
+
+.header_tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* Align the header cells with their respective pointer */
+}
+
+.header_tasks h3 {
+  font-weight: 300;
+}
+.header_item_tasks {
+  margin-left: 6.5%;
+}
+.header_item1_tasks {
+  margin-left: 8%;
+}
+.header_item2_tasks {
+  margin-left: 35%;
+}
+.header_item3_tasks {
+  margin-right: 21%;
+}
+.cell_text_tasks {
+  font-weight: 100;
+}
+
+.body_tasks {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  height: 60vh;
+  overflow-y: scroll;
+}
+
+.row_tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 15px 0;
+  border-radius: 10px;
+  padding: 1%;
+  transition: background-color 0.3s ease;
+  gap: 27px;
+}
+
+.row_tasks:hover {
+  background-color: #f0f0f0;
+}
+
+.cell_tasks {
+  flex: 1 1;
+  padding: 12px;
+  text-align: left;
+  word-break: break-word;
+  margin-right: 20px;
+}
+.cell_tasks p {
+  color: rgb(116, 116, 116);
+  font-size: 18px;
+}
+.cell_task_tasks {
+  flex: 3;
+}
+.cell_task_tasks p {
+  color: black;
+  font-size: 18px;
+}
+.cell_checkbox_tasks {
+  width: 80px;
+}
+.utility {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}

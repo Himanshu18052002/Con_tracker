@@ -1,0 +1,69 @@
+.page_container {
+  height: 100vh;
+}
+.heading_items {
+  margin-top: 0;
+}
+.icons_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_icon {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.top_icon button {
+  background-color: #5656bd;
+  color: white;
+  border-radius: 28px;
+  width: 130px;
+  height: 55px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.attendance_container {
+  display: flex;
+  background: #ffffff;
+  width: 13vw;
+  border-radius: 0 80px 10px 0;
+  height: 75vh;
+}
+.side_list_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: scroll;
+  margin-left: -20px;
+  width: 100%;
+}
+
+.side_list_elements {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side_list_elements h4 {
+  color: #736071;
+}
+
+.active {
+  background-color: #66666624;
+  color: white;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: 5px 5px 15px #b1b0b0;
+}
+
+.side_list_container h3 {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+.side_list_container p {
+  color: #736071;
+}

@@ -1,0 +1,18 @@
+.utilityModal {
+  position: absolute;
+  background: #fff;
+  width: 300px;
+  right: 155px;
+  z-index: 999;
+  border: 1px solid rgb(0, 0, 60);
+}
+.utilityContent {
+  padding: 20px;
+}
+.utilityContent li {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px dotted black;
+  align-items: center;
+  cursor: pointer;
+}

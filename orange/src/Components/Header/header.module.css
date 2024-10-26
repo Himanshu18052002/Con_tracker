@@ -1,0 +1,29 @@
+.topHeader {
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  padding: 8px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 999;
+  transition: all 1s ease-in-out;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.navbar {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the navbar */
+}
+
+/* Add this CSS if you want to animate the opacity as well */
+.navbar {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Smooth transition for the navbar */
+  opacity: 1; /* Initially hide the navbar */
+}
+
+.navbar.visible {
+  transform: translateY(0);
+  opacity: 1;
+}

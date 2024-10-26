@@ -1,0 +1,99 @@
+h1 {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 3rem;
+}
+
+p {
+  cursor: pointer;
+}
+
+.form_auth {
+  background-color: #fff;
+  width: 50%;
+  margin: 15% auto 0;
+  padding: 2%;
+  border: 1px solid #6100fc;
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.input_container {
+  margin-bottom: 2%;
+  display: flex;
+  flex-direction: column; /* Place labels and inputs in a column */
+}
+
+.inputPassword {
+  display: flex;
+}
+
+.input_container input {
+  width: 90%;
+  padding: 2.5%;
+  border: 1px solid #6100fc;
+  border-radius: 18px;
+  margin-top: 2%; /* Add space between input fields */
+}
+
+.input_container label {
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+.password_toggle {
+  margin-left: 2%; /* Adjust the spacing between the input and the icon */
+}
+
+.button_container {
+  text-align: center;
+  margin-top: 2.5%; /* Add space between input fields and button */
+}
+
+.button_container input {
+  width: 80%;
+  padding: 2%;
+  border: none;
+  border-radius: 15px;
+  background-color: #6100fc;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  margin-top: 25px;
+}
+
+@media (min-width: 1500px) {
+  .form_auth {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .form_auth {
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  .form_auth {
+    width: 80%;
+    padding: 25px;
+    margin: 25% auto;
+  }
+  .input_container {
+    margin: 10% 0;
+  }
+  .inputPassword {
+    display: block;
+  }
+  .inputPassword p {
+    position: relative;
+    left: 30%;
+    bottom: 80%;
+  }
+  .button_container {
+    margin-top: -10%;
+  }
+}

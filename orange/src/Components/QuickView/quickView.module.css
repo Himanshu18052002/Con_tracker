@@ -1,0 +1,53 @@
+.heading_items {
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 2%; */
+}
+
+.top_right_logos_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15%;
+}
+
+.top_right_logos {
+  display: flex; /* Added flex display to center the content vertically */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  margin-right: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Use 50% for a perfect circle */
+}
+
+.top_right_logos img {
+  max-width: 200%; /* Ensure the image doesn't exceed the container */
+  max-height: 200%; /* Ensure the image doesn't exceed the container */
+}
+.top_icon {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.top_icon button {
+  background-color: #5656bd;
+  color: white;
+  border-radius: 28px;
+  width: 130px;
+  height: 55px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .heading_items h1 {
+    font-size: 2rem;
+  }
+  .heading_items {
+    margin-top: 15%;
+  }
+  .top_right_logos_container {
+    width: fit-content;
+  }
+}

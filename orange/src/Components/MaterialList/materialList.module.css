@@ -1,0 +1,33 @@
+.materialList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  width: 12%;
+  padding: 50px 0 0 10px;
+  border-radius: 0px 100px 0 0;
+  height: 85vh;
+  overflow-y: scroll;
+  cursor: pointer;
+}
+.materialList input {
+  border-radius: 12px;
+  padding: 5px;
+  width: 85%;
+  font-size: 16px;
+  border: 1px solid orange;
+}
+
+.materialItem {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.details {
+  line-height: 0px;
+}

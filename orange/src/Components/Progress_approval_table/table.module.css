@@ -1,0 +1,127 @@
+.tableBox {
+  margin: 0 50px 0 50px;
+  height: 65vh;
+  overflow: scroll;
+}
+.custom_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 60px;
+}
+
+.table_row {
+  display: flex;
+  align-items: center;
+  margin: 28px auto;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  position: relative;
+  transition: height 0.5s, background-color 0.5s;
+}
+
+.table_row:hover {
+  background-color: #ffffff; /* Set a background color for the hovered row */
+}
+
+.header_row {
+  background-color: #e5e7ea;
+  font-size: 20px;
+  color: #5a5a5a;
+  cursor: pointer;
+}
+
+.table_cell {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+}
+
+.sort_button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.sort_button:hover {
+  color: #ffffff66;
+}
+
+.additional_content {
+  flex-basis: 100%; /* Full width for additional content */
+  padding: 10px;
+  display: none;
+}
+
+.table_row:hover .additional_content {
+  display: flex; /* Show additional content when the row is hovered */
+}
+
+.additional_content img {
+  max-width: 100%;
+  max-height: 100px; /* Set a maximum height for the image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.table_row.hovered {
+  height: 150px; /* Adjust the height as needed */
+}
+.resolved_checkbox {
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #8b8e90;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smoother effect */
+}
+
+.resolved_checkbox:checked {
+  background-color: orange; /* Set the background color to orange when checked */
+}
+.resolved_label {
+  display: inline;
+  color: orange;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.resolved_checkbox:checked::before {
+  content: "\2713";
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row:hover .resolved_label {
+  display: inline;
+}
+
+@media (max-width: 1200px) {
+  .tableBox {
+    margin: 0 25px;
+  }
+  .header_row {
+    font-size: 15px;
+  }
+  .table_row {
+    font-size: 13px;
+  }
+
+  .table_cell {
+    border-bottom: 1px solid #ddd;
+  }
+}

@@ -1,0 +1,59 @@
+.drawingContainer {
+  margin-top: 20px;
+  background-color: #fff;
+  display: flex;
+  padding: 3% 5%;
+  gap: 6%;
+}
+.imageContainer img {
+  width: 100%;
+  height: 900px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 6px 7px 20px #757575;
+}
+.text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.text h5 {
+  color: #707070;
+  font-size: 20px;
+}
+.text p {
+  font-size: 20px;
+}
+.contentContainer {
+  width: 40%;
+}
+.updateContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f07b8a;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.remarksContainer {
+  height: 65vh;
+  overflow: scroll;
+  padding: 12px;
+}
+.remarksCard {
+  border-bottom: 1px solid black;
+}
+@media (max-width: 1200px) {
+  .drawingContainer {
+    flex-direction: column;
+  }
+  .imageContainer img {
+    width: 100%;
+    height: 50vh;
+  }
+  .remarksContainer {
+    width: 75vw;
+    height: auto;
+  }
+}

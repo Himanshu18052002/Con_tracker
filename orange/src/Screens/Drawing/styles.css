@@ -1,0 +1,109 @@
+.drawing-folders-container {
+  background-color: #f8f8f8;
+  margin-top: 60px;
+  height: 20%;
+}
+
+.drawing-box {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.drawing-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+.drawing-folder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 70%;
+}
+
+.drawing-folder img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.drawing-div h2 {
+  display: block;
+  padding: 0;
+  color: orange;
+  margin: 0;
+}
+
+.drawing-folder-texts {
+  margin: 0 0 0 -50px;
+}
+
+.drawing-folder-texts p {
+  margin: 0;
+  text-align: center;
+}
+
+.remarks-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.remarks-details-container {
+  background-color: #544fe6;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 15px;
+  margin-right: 20px;
+  width: 5%;
+}
+
+.remarks-details-container p {
+  margin: 0;
+  color: white !important;
+}
+
+.remarks-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 30px;
+  background: white;
+  padding: 15px;
+}
+
+.remarks-box p {
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #727272;
+}
+
+.drawingCardsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-content: center;
+  gap: 65px;
+}
+
+@media (max-width: 800px) {
+  .drawingCardsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .drawingCardsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

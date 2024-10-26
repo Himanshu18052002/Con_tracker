@@ -1,0 +1,32 @@
+.top_portion_progressApproval {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_portion_progressApproval h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.top_heading_container_progressApproval {
+  display: flex;
+  gap: 150px;
+  margin-left: 25%;
+}
+.top_heading_container_progressApproval h2 {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .top_portion_progressApproval h1 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  .top_heading_container_progressApproval {
+    display: flex;
+    gap: 35px;
+  }
+}

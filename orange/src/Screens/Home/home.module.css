@@ -1,0 +1,212 @@
+h1 {
+  font-size: 43px;
+  font-weight: 700;
+}
+h2 {
+  color: rgb(95, 95, 95);
+  font-weight: 600;
+  font-size: 2rem;
+}
+h3 {
+  color: rgb(118, 118, 118);
+  font-weight: 700;
+}
+h4 {
+  color: rgb(142, 142, 142);
+  font-weight: 700;
+  display: inline-block;
+}
+p {
+  display: inline-block;
+}
+.project_container {
+  padding: 0 20px;
+}
+
+.daily_progress_div {
+  display: flex;
+  gap: 80px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.daily_progress_container {
+  background-color: white;
+  padding: 1%;
+  width: 20vw;
+  height: 24vh;
+  border-top-left-radius: 7%;
+  border-bottom-left-radius: 7%;
+  border-bottom-right-radius: 7%;
+  border-top-right-radius: 45%;
+  box-shadow: 0px 5px 20px rgba(34, 34, 34, 0.3);
+}
+.daily_progress_container_img {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+}
+
+.daily_progress_container_img img {
+  margin: 0 5px; /* Add space between images */
+}
+
+.daily_progress_text_l2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.daily_progress_text_l2 p {
+  color: rgb(154, 154, 154);
+}
+.main_items_container {
+  display: flex;
+  justify-content: space-around;
+}
+.frist_column {
+  width: 45%;
+}
+.drawings_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 -15px 0;
+}
+.box a {
+  color: #6345ea;
+  font-weight: 600;
+  font-size: 23px;
+}
+.drawings_box,
+.Issue_box,
+.pendingTasks_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  height: 100px;
+  box-shadow: -1px 2px 15px #cdcdcd;
+}
+.drawings_frist_section {
+  display: flex;
+  align-items: center;
+}
+.drawings_box p {
+  margin: 0 8px;
+  font-weight: 300;
+}
+.issues_container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.issue_first_section {
+  display: flex;
+  justify-content: space-between;
+}
+.issue_first_section img {
+  margin: -65px -118px 0 -68px;
+}
+.issue_second_section {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.issue_second_section h2,
+.issue_second_section p {
+  margin: 0;
+}
+.issue_button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 100%;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  width: 126%;
+}
+.pendingTasks_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* .pendingTasks_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px;
+  height: 100px;
+} */
+.expense_graph_container,
+.inventory_container {
+  padding: 25px;
+  background: white;
+  max-width: 900px;
+  max-height: 650px;
+  margin: 0 auto;
+  border-radius: 25px;
+  box-shadow: -1px 2px 15px #cdcdcd;
+}
+
+.graph {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  .daily_progress_div {
+    width: 100%;
+  }
+  .daily_progress_container {
+    width: 40%;
+    padding: 0 15px 30px 15px;
+  }
+  .daily_progress_container_img {
+    width: 100%;
+  }
+  .daily_progress_container img {
+    width: 15vw;
+  }
+  .main_items_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frist_column {
+    width: 100%;
+  }
+  .second_column {
+    width: 100%;
+  }
+  .expense_graph_container,
+  .inventory_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .daily_progress_div {
+    gap: 25px;
+  }
+  .daily_progress_container {
+    width: 100%;
+    padding: 0 15px 30px 15px;
+    height: 20vh;
+  }
+}

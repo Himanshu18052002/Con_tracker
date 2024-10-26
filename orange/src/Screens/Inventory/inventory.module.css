@@ -1,0 +1,92 @@
+.search_filter_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically in the center */
+  margin-top: 1%;
+}
+
+.search_input_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 25%;
+}
+
+.search_input_container input {
+  padding: 1% 5%;
+  width: 100%;
+  height: 41px;
+  border-radius: 53px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 6px 7px 15px #414141;
+}
+
+.search_icon {
+  position: absolute;
+  right: 10px;
+  color: #999; /* Adjust the color as needed */
+}
+
+.filter_container {
+  display: flex;
+  gap: 1%;
+  width: 55%;
+  justify-content: space-between; /* Align items to the right */
+  align-items: center;
+}
+
+.filter_container p {
+  color: white;
+  font-weight: 800;
+  font-size: 125%;
+}
+
+.sort_button {
+  padding: 0px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  width: 207px;
+  justify-content: space-evenly;
+  border: none;
+}
+
+.sort_button p {
+  margin-right: 8px; /* Adjust the spacing between text and icon */
+}
+
+.sort_button:hover {
+  background-color: #ffffff37; /* Adjust the hover color */
+}
+
+/* Remove unnecessary styles */
+.filter_container .sort_button {
+  max-width: none;
+  overflow: visible;
+}
+
+.material_filter,
+.date_filter,
+.vendor_filter,
+.amount_filter {
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.material_filter {
+  background-color: #544fe6;
+}
+
+.date_filter {
+  background-color: #ffb84a;
+}
+
+.vendor_filter {
+  background-color: #fc909f;
+}
+
+.amount_filter {
+  background-color: #998ade;
+}

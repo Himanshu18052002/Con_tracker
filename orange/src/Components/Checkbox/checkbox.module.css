@@ -1,0 +1,40 @@
+.checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.resolved_checkbox {
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #8b8e90;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for smoother effect */
+}
+
+.resolved_checkbox:checked {
+  background-color: orange; /* Set the background color to orange when checked */
+}
+.resolved_label {
+  display: inline;
+  color: orange;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.resolved_checkbox:checked::before {
+  content: "\2713";
+  font-size: 20px;
+  color: white; /* Set the text color to white */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row:hover .resolved_label {
+  display: inline;
+}

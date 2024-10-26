@@ -1,0 +1,107 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5335da;
+  color: white;
+  width: 90px;
+  margin-top: 1.8%;
+  overflow: hidden;
+  height: 100vh;
+  transition: all 0.5 ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 25;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.logoImage {
+  width: 100%;
+  height: auto;
+}
+
+.logoVisible .logoImage {
+  max-width: 38%;
+}
+
+.logoHidden .logoImage {
+  max-width: 90px;
+  margin-bottom: 35px;
+}
+
+.visible {
+  visibility: visible;
+  width: 230px;
+  padding: 20px 20px 0 0;
+}
+
+.active {
+  background-color: #8068ea;
+}
+
+.iconsContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  gap: 25px;
+}
+
+.icon {
+  padding: 7px 13px;
+  border-radius: 18px;
+  width: 100%;
+}
+
+.icon a {
+  color: inherit;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon p {
+  margin-left: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid white;
+  margin: 35px 0;
+}
+
+.profileContainer {
+  width: 70px;
+  height: 70px;
+  border: 1px solid white;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6f52f1;
+  box-shadow: -5px 2px 25px #373737;
+}
+@media (max-width: 800px) {
+  nav {
+    background-color: #5335da;
+  }
+  .logoContainer {
+    width: 50%;
+  }
+  .navbar {
+    display: none;
+  }
+  .visible {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+}

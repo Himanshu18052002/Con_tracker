@@ -1,0 +1,230 @@
+/* Modal.css */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 70%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for issue-box and right side divs */
+  gap: 20px;
+}
+.task-add-container {
+  display: flex;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200%;
+}
+
+.content-wrapper h2 {
+  font-weight: 300;
+  color: black;
+  font-size: 30px;
+}
+
+.content-wrapper h3 {
+  color: black;
+  font-weight: 600;
+}
+
+.show {
+  display: block;
+}
+
+.task-box {
+  padding: 2%;
+  height: 100%;
+  width: 200%;
+}
+
+.task-box input {
+  width: 100%;
+  height: 43%;
+  border-radius: 21px;
+  font-size: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 14px;
+}
+
+.grid-item {
+  width: 80%;
+}
+
+.grid-item p {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.right-portion {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Ensure the right-portion takes up the full width */
+}
+
+.assign-div {
+  padding: 0 0 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #f1f3f7;
+  border-radius: 20px;
+  height: 100%;
+  width: 50%;
+}
+
+.assign-div button {
+  background-color: #f6f6ff;
+  color: black;
+  border-radius: 20px;
+  width: 121px;
+  height: 43px;
+  font-weight: 800;
+}
+
+.assign-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.assign-box img {
+  height: 20px;
+}
+
+.attachments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 40%;
+  margin-top: 35px;
+}
+
+.attachments p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.attachment-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-task {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  align-self: flex-end;
+}
+
+.add-task button {
+  width: 323px;
+  height: 35%;
+  border: none;
+  padding: 10px;
+  border-radius: 36px;
+  background-color: #5656bd;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20%;
+}
+
+/* Responsive Styles */
+/* @media (max-width: 1200px) {
+  .modal-content {
+    width: 80%;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .task-add-container {
+    flex-direction: column;
+  }
+
+  .assign-div {
+    width: 100%;
+  }
+} */
+
+@media (max-width: 800px) {
+  .modal-content {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    display: flex;
+    overflow-y: scroll;
+  }
+  .task-add-container {
+    flex-direction: column;
+  }
+  .content-wrapper h2 {
+    font-size: 20px;
+  }
+
+  .content-wrapper h3 {
+    font-size: 18px;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 39px;
+    cursor: pointer;
+  }
+  .task-box input {
+    font-size: 14px;
+  }
+  .task-box {
+    width: auto;
+  }
+
+  .assign-div {
+    width: 100%;
+    padding: 0 5px;
+    margin-top: 35px;
+  }
+
+  .add-task button {
+    width: 100%;
+    font-size: 12px;
+    padding: 6px;
+    height: 46px;
+    margin-bottom: 50px;
+  }
+}
